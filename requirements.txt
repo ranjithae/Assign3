@@ -4,3 +4,4 @@ gunicorn==19.7.1
 psycopg2==2.7.1
 pytz==2017.2
 whitenoise==3.3.0
+watson-developer-cloud==1.2.0
