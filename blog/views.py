@@ -41,6 +41,9 @@ def post_list(request):
             target='es')
         obj = json.dumps(translation, indent=2, ensure_ascii=False)
         post.obj2 = json.loads(obj)
+        post.translate_spanish = post.obj2['translations'][0]['translation']
+        post.count = post.obj2['word_count']
+        post.charactercount = post.obj2['character_count']
 
     return render(request, 'blog/post_list.html', {'posts': posts})
 #def post_detail(request,pk):
