@@ -56,7 +56,7 @@ def post_list(request):
         translation1 = language_translator.translate(text=post.text,source='en',target='ar')
         kobj = json.dumps(translation1,indent=2,ensure_ascii=False)
         post.kobj=json.loads(kobj)
-        post.translate_korean = post.kobj['translations'][0]['translation']
+        post.translate_arabic = post.kobj['translations'][0]['translation']
 
         profile = personality_insights.profile(content=post.text, content_type="text/plain",raw_scores=True,
                                                consumption_preferences=True)

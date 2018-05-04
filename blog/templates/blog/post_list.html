@@ -14,18 +14,22 @@
         Sad : {{ post.sadScore }}</p>
 
           <!-- <p>{{ post.obj2}}</p> -->
+           <b>Content in Spanish</b>
            <p>  {{post.translate_spanish }} </p>
 
            <p>Word Count: {{post.count}} | Letter Count: {{post.charactercount}}</p>
 
            <!--<p>{{ post.obj2}}</p>-->
-        <span style="background-color:lightgreen"><b>Personality Inputs:</b></span>
-            <p> {{post.translate_korean }}</p>
+            <b>Content in Arabic</b>
+            <p> {{post.translate_arabic }}</p>
+
+           <span style="background-color:lightgreen"><b>Watson Personality Inputs:</b></span>
            <p>Personality Score1 - {{post.score0}} | 2nd Score - {{post.score1}}| 3rd Score - {{post.score2}} </p>
            <p>Personality 1st Percentile - {{post.percentile0}}| 2nd Percentile - {{post.percentile1}} | Personality 3rd Percentile - {{post.percentile2}} </p>
-           <p>Significance - {{post.significance0}}</p>
-           <p>Needs - {{post.needs}}</p>
-           <span style="background-color:lightgreen"><b>Big 5 Characteristics Percentiles</b></span>
+           <p>Significance - {{post.significance0}} | Needs - {{post.needs}}</p>
+           
+
+           <span style="background-color:lightgreen"><b>Watson Big 5 Characteristics Percentiles</b></span>
            <p> Openess : {{post.openness}} |
                Conscientiousness: {{post.conscientiousness}} |
                Extraversion: {{post.extraversion}}|
